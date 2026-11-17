@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-17T00:13:03.175Z",
-  "base": "http://127.0.0.1:4468/",
+  "checked_at": "2026-11-17T00:14:29.548Z",
+  "base": "https://rp-parallax.vercel.app/",
   "checks": [
     "real saved or live OMM dataset loads",
     "worker calculates real-data passes and static selected track",
