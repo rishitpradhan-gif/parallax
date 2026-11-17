@@ -1,12 +1,13 @@
 {
-  "checked_at": "2026-11-17T00:53:57.612Z",
-  "base": "http://127.0.0.1:4468/",
+  "checked_at": "2026-11-17T01:00:50.793Z",
+  "base": "https://rp-parallax.vercel.app/",
   "checks": [
     "actual WebGL camera remains at spacecraft and uses a 62° horizon view",
     "changing gaze changes orientation without moving the camera",
     "head-look presets, keyboard and pointer drag operate in first person",
     "daylight preview explicitly changes selected time instead of inventing light",
     "lens control and labelled simulation screenshot download work",
+    "actual dated Terra daily composite loads onto the 3D Earth",
     "first-person HUD fits mobile without horizontal overflow"
   ],
   "scope": "Chrome with software WebGL; camera geometry and interactions, not a claim of real-time weather or actual spacecraft attitude."

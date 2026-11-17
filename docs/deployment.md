@@ -12,3 +12,12 @@ All eight experience browser checks and all four imagery checks passed on the pu
 The virtual camera is an explanatory rendering, not actual sensor telemetry. The image capture dates remain separate from the current-time orbital estimate. No user study, independent accessibility audit, or physical-device validation is claimed.
 
 Vercel publication used the existing CLI workflow; future GitHub pushes still require deployment. No account permissions were changed. Documentation-only verification updates follow the runtime deployment.
+
+## Version 2.1 — first-person astronaut viewpoint
+
+Deployment: dpl_6VRnx4UykbeRByFoXQBoGZY68iyU
+Runtime source: 9bc4f40
+
+The public release passed seven first-person browser checks, including the fixed camera and 62° horizon geometry in an isolated WebGL harness, normal production head-look controls, explicit future-time daylight selection, labelled PNG export, actual dated Terra imagery on the Earth, and phone layout. The harness runs in a separate blank test document; no scripts are injected into the CSP-protected production page.
+
+The public index, bundle, stylesheet, and both NASA natural-surface textures matched local bytes. `/api/surface?date=2026-11-15` returned HTTP 200 with image/jpeg, the requested imagery-date header, and 1,949,597 actual NASA image bytes. The renderer uses a dated composite, not live cloud telemetry. Twenty-two core, geometry, and input tests passed locally. See astronaut-view.md and astronaut-browser-results.json for the active model and limits.
