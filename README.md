@@ -1,10 +1,14 @@
 # Parallax
 
-## Earth explorer — version 2
+## First-person spacecraft view — version 2.1
+
+Satellite view now fixes the observer at the spacecraft with a 62° horizon-facing camera, head-look controls, down/space presets, and fullscreen. It follows an Earth-relative travel frame, removes artificial night lighting, and approximates atmospheric Rayleigh scattering. Optional dated Terra cloud imagery and an explicitly time-shifted daylight preview are available. Screenshots identify the view as a simulation. See [camera and rendering details](docs/astronaut-view.md).
+
+## Earth explorer
 
 The main site now opens on a photographic 3D Earth. Choose one of nine spacecraft or import other real OMM records, enter its Earth-facing view, and explore dated NASA imagery. Current orbital estimates update once per second. Time can be paused, scrubbed, or set explicitly in UTC. Orbit view supports dragging and zooming; camera transitions and gradients follow the new motion-enabled design. Reduced-motion and explicit motion pause are supported.
 
-The Earth surface is an official NASA Blue Marble composite. Solar illumination is approximate, with ambient fill for the night side. The nadir camera uses calculated position and looks toward Earth’s center; it is not a live onboard camera or a calibrated sensor simulation. MODIS Terra/Aqua regional composites and EPIC/DSCOVR photographs have source and date labels. NASA image endpoints are accessed directly for pixels; the EPIC metadata service is cached.
+The Earth surface is an official NASA Blue Marble composite. Solar illumination and scattering are approximate. The first-person camera uses calculated position, follows the horizon by default, and supports gaze controls. It is not a live onboard camera or calibrated sensor simulation. MODIS Terra/Aqua regional composites and EPIC/DSCOVR photographs have source and date labels. NASA image endpoints are accessed directly for pixels; the EPIC metadata service is cached.
 
 Design and image provenance: [redesign notes](docs/redesign.md), [image sources](docs/image-provenance.json). The original planner is at `/passes.html`.
 
@@ -22,9 +26,9 @@ Live: https://rp-parallax.vercel.app
 
 ## Local
 
-Node 22+: `npm ci`, `npm run build`, `npm start`. Open http://127.0.0.1:4468. The local static server uses the saved dataset; the Vercel deployment also serves `/api/orbits`. The live endpoint fetches two fixed CelesTrak URLs, caches successful responses for two hours at the CDN, and reports upstream failures. No arbitrary URL proxy is exposed.
+Node 22+: `npm ci`, `npm run build`, `npm start`. Open http://127.0.0.1:4468. The local server and Vercel deployment both serve the fixed orbital and NASA imagery API endpoints, with the dated saved dataset available as fallback. The live endpoint fetches two fixed CelesTrak URLs, caches successful responses for two hours at the CDN, and reports upstream failures. No arbitrary URL proxy is exposed.
 
-`npm test` runs fifteen engine and camera/imagery tests. `npm run evaluate` reproduces the saved four-location sampling study. `node scripts/experience-browser-test.mjs` checks the 3D experience; `node scripts/browser-test.mjs` checks the advanced planner. These require Playwright and an installed Chrome browser; run the local server first. Browser tooling is optional and is available in the parent development workspace.
+`npm test` runs 22 engine, camera, and imagery-input tests. `npm run evaluate` reproduces the saved four-location sampling study. `node scripts/experience-browser-test.mjs` checks the 3D experience; `node scripts/browser-test.mjs` checks the advanced planner. These require Playwright and an installed Chrome browser; run the local server first. Browser tooling is optional and is available in the parent development workspace.
 
 ## Evidence and limits
 

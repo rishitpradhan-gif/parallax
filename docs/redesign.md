@@ -1,4 +1,6 @@
-# Parallax 2: Earth from a satellite
+# Parallax 2.0 design checkpoint (historical)
+
+Version 2.1 replaces the wide nadir camera and ambient lighting described below. See [astronaut-view.md](astronaut-view.md) for the active camera, lighting, and surface model.
 
 The product opens on a photographic 3D Earth rather than a slogan-led editorial page. Its main journey is spacecraft selection, camera entry, and dated imagery. Current orbital estimates update once per second. Camera transitions ease smoothly and support explicit motion pause and the system reduced-motion setting. Rendering pauses offscreen and in hidden tabs.
 

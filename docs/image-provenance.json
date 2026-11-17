@@ -2,16 +2,21 @@
   "sources": {
     "earth": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=BlueMarble_ShadedRelief_Bathymetry&STYLES=&FORMAT=image/jpeg&SRS=EPSG:4326&BBOX=-180,-90,180,90&WIDTH=2048&HEIGHT=1024",
     "epic": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/14/jpg/epic_1b_20261114222224.jpg",
-    "earth_high_resolution": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=BlueMarble_ShadedRelief_Bathymetry&STYLES=&FORMAT=image/jpeg&SRS=EPSG:4326&BBOX=-180,-90,180,90&WIDTH=8192&HEIGHT=4096"
+    "earth_high_resolution": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=BlueMarble_ShadedRelief_Bathymetry&STYLES=&FORMAT=image/jpeg&SRS=EPSG:4326&BBOX=-180,-90,180,90&WIDTH=8192&HEIGHT=4096",
+    "natural_surface": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=BlueMarble_NextGeneration&STYLES=&FORMAT=image/jpeg&SRS=EPSG:4326&BBOX=-180,-90,180,90&WIDTH=4096&HEIGHT=2048&TIME=2004-07-01"
   },
   "hashes": {
     "public/earth-blue-marble.jpg": "b7c2ee592bae14fc1a60f4a2c75475693156cbbe093e057a1646d938df706d6a",
     "public/epic-saved.jpg": "fbce2269f41d0b5620678ec6a7163ed1aa0788ad0adb4839bcd4ddd9f4efe0ef",
-    "public/earth-blue-marble-8k.jpg": "dc26b816037021601eeea972c59e264a37fd41cd4062381fdb4d9dc9a6230348"
+    "public/earth-blue-marble-8k.jpg": "dc26b816037021601eeea972c59e264a37fd41cd4062381fdb4d9dc9a6230348",
+    "public/earth-natural-high.jpg": "00405b3cb1327f4bf22bdcc987c610fceac39be90f98b6a435b373575ea26297",
+    "public/earth-natural.jpg": "bbbdb6809b162ec819fc324e0915115932e6a0e6fce4372e4932de9b684c8dc5"
   },
   "blue_marble_scope": "NASA Blue Marble shaded relief and bathymetry static composite. Not current cloud cover or a spacecraft frame.",
   "epic_capture_time": "2026-11-14T22:17:35Z",
   "epic_scope": "Actual EPIC photograph from NOAA DSCOVR; not the selected LEO satellite.",
   "retrieved_at": "2026-11-17T00:28:24.274Z",
-  "high_resolution_scope": "Deferred 8192×4096 NASA basemap for the close satellite view; downsampled for narrow screens or hardware texture limits. Static composite, not live imagery."
+  "high_resolution_scope": "Deferred 8192×4096 NASA basemap for the close satellite view; downsampled for narrow screens or hardware texture limits. Static composite, not live imagery.",
+  "active_surface": "NASA Earth Observatory / July 2004 Blue Marble Next Generation. 4096px downloaded; 2048px startup derivative. The shaded-bathymetry images are retained legacy artifacts and no longer used.",
+  "first_person_clouds": "Optional date-specific MODIS Terra daily composite through /api/surface. Not real-time weather; gaps use static base."
 }
