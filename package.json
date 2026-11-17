@@ -1,6 +1,6 @@
 {
   "name": "parallax",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "start": "node server.mjs",
@@ -9,7 +9,8 @@
     "evaluate": "node scripts/evaluate.mjs"
   },
   "dependencies": {
+    "esbuild": "^0.25.0",
     "satellite.js": "^6.0.1",
-    "esbuild": "^0.25.0"
+    "three": "^0.180.0"
   }
 }

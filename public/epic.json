@@ -1,0 +1,13 @@
+{
+  "source": "NASA EPIC / NOAA DSCOVR",
+  "retrieved_at": "2026-11-17T00:19:04.822188+00:00",
+  "images": [
+    {
+      "image": "epic_1b_20261114222224",
+      "captured_at": "2026-11-14T22:17:35Z",
+      "caption": "This image was taken by NASA's EPIC camera onboard the NOAA DSCOVR spacecraft",
+      "url": "https://epic.gsfc.nasa.gov/archive/natural/2026/11/14/jpg/epic_1b_20261114222224.jpg",
+      "local_url": "epic-saved.jpg"
+    }
+  ]
+}

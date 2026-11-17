@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-11-17T00:31:13.620Z",
+  "base": "http://127.0.0.1:4468/",
+  "checks": [
+    "real orbital data and photographic WebGL Earth load",
+    "pause freezes view time and Now resumes current estimates",
+    "satellite selection, Earth-facing view and orbit controls work",
+    "rendered Earth view exports to PNG",
+    "stale orbital time blocks position display and Now recovers",
+    "additional OMM spacecraft import and text escaping work",
+    "390/768/1440 layouts fit and screenshots reviewed",
+    "reduced-motion removes CSS animation and camera easing"
+  ],
+  "scope": "Chrome with software WebGL for reproducible rendering. No camera-feed or field-validation claim. NASA service calls are tested separately."
+}

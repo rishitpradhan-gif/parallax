@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-11-17T00:30:50.554Z",
+  "base": "http://127.0.0.1:4468/",
+  "checks": [
+    "Real NASA GIBS image loaded and decoded in browser",
+    "Source mission, composite date and non-live scope shown",
+    "Real saved or latest NASA EPIC photograph decoded with capture timestamp",
+    "Simulated NASA service failure displays unavailability without substitute imagery"
+  ],
+  "scope": "Actual remote pixels, plus a deliberate network failure. Does not validate image geolocation or spacecraft acquisition timing."
+}

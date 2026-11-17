@@ -1,13 +1,22 @@
 # Parallax
 
-A still, real-data satellite access planner. Choose a location, spacecraft, and UTC time to calculate the next 24 hours of geometric passes.
+## Earth explorer — version 2
+
+The main site now opens on a photographic 3D Earth. Choose one of nine spacecraft or import other real OMM records, enter its Earth-facing view, and explore dated NASA imagery. Current orbital estimates update once per second. Time can be paused, scrubbed, or set explicitly in UTC. Orbit view supports dragging and zooming; camera transitions and gradients follow the new motion-enabled design. Reduced-motion and explicit motion pause are supported.
+
+The Earth surface is an official NASA Blue Marble composite. Solar illumination is approximate, with ambient fill for the night side. The nadir camera uses calculated position and looks toward Earth’s center; it is not a live onboard camera or a calibrated sensor simulation. MODIS Terra/Aqua regional composites and EPIC/DSCOVR photographs have source and date labels. NASA image endpoints are accessed directly for pixels; the EPIC metadata service is cached.
+
+Design and image provenance: [redesign notes](docs/redesign.md), [image sources](docs/image-provenance.json). The original planner is at `/passes.html`.
+
+
+A real-data Earth explorer and satellite access planner. Choose a location, spacecraft, and UTC time to calculate the next 24 hours of geometric passes.
 
 - Nine named spacecraft from CelesTrak: ISS, Terra, Aqua, Landsat 8/9, Sentinel-1A and Sentinel-2A/2B/2C.
 - SGP4 propagation with satellite.js 6.0.2; 10-second sampling and local peak refinement.
-- Static selected ground track, range, azimuth, elevation, clipped-window flags.
+- Static selected ground track in the advanced planner, range, azimuth, elevation, and clipped-window flags.
 - CSV ledger and full JSON export containing settings and original orbital records.
 - Cached live-data endpoint, dated real-data fallback, and bounded OMM JSON import.
-- Seven-day epoch exclusion. No animations, tracking libraries, or account required.
+- Seven-day epoch exclusion. No account or tracking libraries required.
 
 Live: https://rp-parallax.vercel.app
 
@@ -15,7 +24,7 @@ Live: https://rp-parallax.vercel.app
 
 Node 22+: `npm ci`, `npm run build`, `npm start`. Open http://127.0.0.1:4468. The local static server uses the saved dataset; the Vercel deployment also serves `/api/orbits`. The live endpoint fetches two fixed CelesTrak URLs, caches successful responses for two hours at the CDN, and reports upstream failures. No arbitrary URL proxy is exposed.
 
-`npm test` runs nine engine tests. `npm run evaluate` reproduces the saved four-location sampling study. `node scripts/browser-test.mjs` requires Playwright and an installed Chrome browser; run the local server first. Browser tooling is optional and is available in the parent development workspace.
+`npm test` runs fifteen engine and camera/imagery tests. `npm run evaluate` reproduces the saved four-location sampling study. `node scripts/experience-browser-test.mjs` checks the 3D experience; `node scripts/browser-test.mjs` checks the advanced planner. These require Playwright and an installed Chrome browser; run the local server first. Browser tooling is optional and is available in the parent development workspace.
 
 ## Evidence and limits
 
