@@ -1,0 +1,4 @@
+import {readFile,writeFile} from 'node:fs/promises';import {createHash} from 'node:crypto';import {IDS,validateElements} from '../core.mjs';
+const sources=['https://celestrak.org/NORAD/elements/gp.php?GROUP=resource&FORMAT=json','https://celestrak.org/NORAD/elements/gp.php?CATNR=25544&FORMAT=json'];
+const buffers=await Promise.all(['/private/tmp/parallax-resource.json','/private/tmp/parallax-iss.json'].map(p=>readFile(p)));const records=validateElements(buffers.flatMap(b=>JSON.parse(b)).filter(r=>IDS.includes(r.NORAD_CAT_ID)));
+await writeFile('public/orbits.json',JSON.stringify({schema:'parallax-orbits/1',retrieved_at:new Date().toISOString(),sources,source_sha256:buffers.map(b=>createHash('sha256').update(b).digest('hex')),records},null,2)+'\n');console.log(records.length+' real spacecraft saved.');

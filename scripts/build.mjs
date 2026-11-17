@@ -1,0 +1,1 @@
+import {build} from 'esbuild';await build({entryPoints:['src.mjs'],bundle:true,format:'esm',outfile:'public/app.js'});await build({entryPoints:['worker.mjs'],bundle:true,format:'esm',outfile:'public/worker.js'});

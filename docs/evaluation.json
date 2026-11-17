@@ -1,0 +1,48 @@
+{
+  "settings": "24 hours from 2026-11-16T20:00Z; 10° minimum; 10s versus 2s sampling",
+  "records": [
+    {
+      "lat": 37.8715,
+      "lon": -122.273,
+      "coarse_passes": 37,
+      "fine_passes": 37,
+      "unmatched": 0,
+      "max_boundary_delta_s": 8,
+      "max_peak_underestimate_deg": 3.7144416177678323
+    },
+    {
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "coarse_passes": 47,
+      "fine_passes": 47,
+      "unmatched": 0,
+      "max_boundary_delta_s": 8,
+      "max_peak_underestimate_deg": 0.7783041392901708
+    },
+    {
+      "lat": 1.3521,
+      "lon": 103.8198,
+      "coarse_passes": 27,
+      "fine_passes": 27,
+      "unmatched": 0,
+      "max_boundary_delta_s": 8,
+      "max_peak_underestimate_deg": 0.05923721603480914
+    },
+    {
+      "lat": -33.8688,
+      "lon": 151.2093,
+      "coarse_passes": 34,
+      "fine_passes": 34,
+      "unmatched": 0,
+      "max_boundary_delta_s": 8,
+      "max_peak_underestimate_deg": 0.33696780944323734
+    }
+  ],
+  "hashes": {
+    "core.mjs": "1aebad4efb936c7cd695a470646fbfd4c746a62a901cbc988d6ac837d3ec1dcd",
+    "public/orbits.json": "8bd05dae068354a2b52b9f064afe2752e28081479196ac4a64f2f475cb8bb07e",
+    "scripts/evaluate.mjs": "84fb996531b258b05e74973e8b21e3cf19553edb7105e511014e2dfbd9c65380"
+  },
+  "retained_finding": "Initial unrefined 10-second peak assertion failed on the saved Berkeley cohort. Production now refines each sampled peak locally using bounded ternary search to a 10ms time bracket; this report retains the coarse error against refined 2-second sampling. No physical angular accuracy is guaranteed.",
+  "scope": "Same propagator at two sample rates; not independent orbital or field validation."
+}

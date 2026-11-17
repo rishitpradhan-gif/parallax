@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-11-17T00:13:03.175Z",
+  "base": "http://127.0.0.1:4468/",
+  "checks": [
+    "real saved or live OMM dataset loads",
+    "worker calculates real-data passes and static selected track",
+    "downloaded calculation includes exact elements and settings",
+    "changed controls mark completed results stale",
+    "stale elements produce exclusions instead of predictions",
+    "malformed imported data rejects",
+    "390/768/1440 layouts fit; zero running animations"
+  ],
+  "scope": "Chrome automation only; no user or field validation."
+}
