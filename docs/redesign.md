@@ -6,7 +6,7 @@ The product opens on a photographic 3D Earth rather than a slogan-led editorial 
 
 - Awwwards: https://www.awwwards.com/sites/solar-journey — reviewed the listed planet interaction, navigation, and transition examples. A browser visit to https://solar-journey.webflow.io/ showed its loading/intro state; this was used as a limited visual reference, not a full usability review.
 - NASA EPIC: https://epic.gsfc.nasa.gov/about/api — actual metadata and imagery retrieved. The tested latest upstream collection contained 13 photographs, most recent capture November 14, 2026 at 22:17:35 UTC.
-- NASA GIBS: https://nasa-gibs.github.io/gibs-api-docs/access-basics/ — public WMS imagery. The Earth basemap is the official BlueMarble_ShadedRelief_Bathymetry layer at 2048×1024. Regional imagery is MODIS Terra or Aqua true color.
+- NASA GIBS: https://nasa-gibs.github.io/gibs-api-docs/access-basics/ — public WMS imagery. The Earth basemap is the official BlueMarble_ShadedRelief_Bathymetry layer at 2048×1024, with an 8192×4096 version loaded on entry to the close satellite camera and downsampled for narrower screens/hardware. Regional imagery is MODIS Terra or Aqua true color.
 - Three.js: https://threejs.org/docs/ — renderer and camera implementation. This does not imply design consultation with the authors or an award.
 
 The request explicitly superseded the earlier no-animation preference. No third-party design assets or screenshots were copied into the product. The Earth surface and EPIC photograph are downloaded from NASA sources and recorded in image-provenance.json.

@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-17T00:30:50.554Z",
-  "base": "http://127.0.0.1:4468/",
+  "checked_at": "2026-11-17T00:36:06.573Z",
+  "base": "https://rp-parallax.vercel.app/",
   "checks": [
     "Real NASA GIBS image loaded and decoded in browser",
     "Source mission, composite date and non-live scope shown",

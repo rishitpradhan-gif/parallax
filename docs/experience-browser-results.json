@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-17T00:31:13.620Z",
-  "base": "http://127.0.0.1:4468/",
+  "checked_at": "2026-11-17T00:37:10.418Z",
+  "base": "https://rp-parallax.vercel.app/",
   "checks": [
     "real orbital data and photographic WebGL Earth load",
     "pause freezes view time and Now resumes current estimates",
