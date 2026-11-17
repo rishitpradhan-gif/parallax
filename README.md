@@ -47,3 +47,7 @@ Snapshots expire under the seven-day rule. A saved snapshot remains downloadable
 - https://github.com/brandon-rhodes/python-sgp4/tree/master/sgp4 — verification fixtures `SGP4-VER.TLE` and `tcppver.out` (Vallado verification dataset).
 
 No claims of physical validation, worldwide novelty, or independent security/accessibility certification. Created by Rishit Pradhan.
+
+## iPhone application
+
+A bundled Capacitor iOS target is prepared in `ios/`. See [IOS.md](IOS.md) for Xcode setup, native features, privacy and the uncompleted native validation steps. Run `npm run ios:sync` and `npm run ios:open` on a Mac with Xcode 26+. This source preparation is not a signed or device-tested release.

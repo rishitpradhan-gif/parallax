@@ -1,0 +1,2 @@
+import {Capacitor,CapacitorHttp} from '@capacitor/core';import {Filesystem,Directory,Encoding} from '@capacitor/filesystem';import {Share} from '@capacitor/share';import {createNativeAdapter} from './adapter.mjs';
+if(Capacitor.isNativePlatform())globalThis.ParallaxNative=createNativeAdapter({http:CapacitorHttp,filesystem:Filesystem,share:Share,cacheDirectory:Directory.Cache,encodingUTF8:Encoding.UTF8});await import('../src.mjs');

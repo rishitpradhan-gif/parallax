@@ -2,3 +2,10 @@ node_modules/
 .vercel/
 .env*
 .DS_Store
+.ios-web/
+ios/App/App/public/
+ios/App/DerivedData/
+ios/App/build/
+*.xcuserstate
+xcuserdata/
+outputs/

@@ -1,0 +1,14 @@
+{
+  "appId": "com.rishitpradhan.parallax",
+  "appName": "Parallax",
+  "webDir": ".ios-web",
+  "backgroundColor": "#02040a",
+  "ios": {
+    "contentInset": "never",
+    "preferredContentMode": "mobile",
+    "backgroundColor": "#02040a"
+  },
+  "plugins": {
+    "CapacitorHttp": { "enabled": false }
+  }
+}

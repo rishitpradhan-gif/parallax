@@ -1,0 +1,43 @@
+{
+  "prepared_on": "2026-11-17",
+  "core_and_adapter_tests": {
+    "passed": 25,
+    "failed": 0,
+    "native_plugins": "mocks only"
+  },
+  "project_checks": [
+    "Info.plist syntax",
+    "project.pbxproj syntax",
+    "PrivacyInfo.xcprivacy syntax",
+    "Swift frontend syntax parse (not native typecheck)",
+    "1024px opaque app icon",
+    "Capacitor asset sync"
+  ],
+  "browser_attempts": [
+    {
+      "result": "partial",
+      "passed": [
+        "bundled historical orbit opened with external requests blocked",
+        "save dialog submitted and closed"
+      ],
+      "failed_stage": "Renderer/app initialization after page reload timed out after 30 seconds",
+      "limitation": "Saved-view restoration after reload and later layout assertions remain unverified. Storage tests passed independently."
+    },
+    {
+      "result": "blocked",
+      "stage": "Two subsequent isolated Chrome launches timed out after 180 seconds"
+    }
+  ],
+  "native_build": {
+    "executed": false,
+    "reason": "Only Apple Command Line Tools are installed; full Xcode is absent."
+  },
+  "unverified": [
+    "WKWebView rendering and performance",
+    "native plugin execution",
+    "simulator and physical iPhone behavior",
+    "saved-view UI flow",
+    "signing and distribution",
+    "VoiceOver and device accessibility"
+  ]
+}
