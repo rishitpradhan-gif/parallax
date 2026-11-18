@@ -1,5 +1,9 @@
 # Parallax
 
+[![Parallax — working application preview](https://raw.githubusercontent.com/rishitpradhan-gif/rishitpradhan-gif/main/assets/parallax-earth.png)](https://rp-parallax.vercel.app)
+
+**[Open application ↗](https://rp-parallax.vercel.app)** · [Portfolio case study](https://rishitpradhan.com/projects/parallax/)
+
 ## First-person spacecraft view — version 2.1
 
 Satellite view now fixes the observer at the spacecraft with a 62° horizon-facing camera, head-look controls, down/space presets, and fullscreen. It follows an Earth-relative travel frame, removes artificial night lighting, and approximates atmospheric Rayleigh scattering. Optional dated Terra cloud imagery and an explicitly time-shifted daylight preview are available. Screenshots identify the view as a simulation. See [camera and rendering details](docs/astronaut-view.md).
